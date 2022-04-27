@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.full-page{
+    width:100%;
+    height:100%;
+    background-color: rgb(39, 211, 62);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background: url("https://th.bing.com/th/id/OIP.z6QHol8glAKMOhcK6ypZFQAAAA?pid=ImgDet&w=267&h=200&rs=1");
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding:35px 100px;
+    justify-content: space-between;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background:#009688;
+    position:absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.login-form{
+    width: 50px;
+}
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+
+/*.form-box{
+    width: 380px;
+    height: 100px;
+    position: relative;
+    margin:2% auto;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+.form{
+    position: relative;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    width:100px
+
+
+/*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.form input {
+	width: 100px;
+	border: none;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: rgb(114, 21, 21);
+	font-size: 18px;
+	padding: 10px;
+    width: 302px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+a {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	opacity: .7;
+} *
